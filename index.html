@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="views/style.css">
+    <title>Batu, Gunting & Kertas</title>
+</head>
+
+<body>
+    
+
+
+    <div class="wrapper">
+        <div class="title">
+            <h2>Scissors, Papers & Rock</h2>
+        </div>
+        <div class="game-content">
+            <div class="game-show">
+                <div class="player-1">
+                    <img src="images/hand.png" class="animate-1">
+                    <p>YOU</p>
+                </div>
+                <div id="message">Start!</div>
+                <div class="player-2">
+                    <img src="images/hand.png" class="animate-2">
+                    <p>BOT</p>
+                </div>
+            </div>
+
+            <h3>Choose:</h3>
+            <div class="game-options">
+                <div class="option scissors">
+                    <img src="images/scissors.png" data-id="scissors">
+                    <span>Scissors</span>
+                </div>
+                <div class="option paper">
+                    <img src="images/paper.png" data-id="paper">
+                    <span>Paper</span>
+                </div>
+                <div class="option rock">
+                    <img src="images/rock.png" data-id="rock">
+                    <span>Rock</span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p><a href="https://linktr.ee/roshit" target="_blank">Made with &#10084; by Roshit</p></a>
+        </div>
+    </div>
+
+    <div id="simpleModal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Hi!
+                      </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    guys please check all my social media below here, u can connect with me too if u wan't :)
+                    <br>
+                    <a href="https://linktr.ee/roshit" target="_blank">Click Here!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="views/script.js"></script>
+</body>
+
+</html>

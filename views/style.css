@@ -1,0 +1,261 @@
+/* CSS RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  height: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* CSS RESET */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+
+body {
+    background-color: #4a4e69;
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.game-content {
+    padding: 0.9em 0;
+}
+
+.title {
+    background-color: #fff;
+    color: #4a4e69;
+    padding: 1em 1.8em;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
+}
+
+.title h2 {
+    text-transform: uppercase;
+    font-size: 1.6em;
+}
+
+#message {
+    font-size: 1.2em;
+    margin: 0 2em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    width: 200px;
+}
+
+.game-show {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em 0;
+    border: 5px solid #fff;
+    padding: 1.5em;
+}
+
+.game-show img {
+    width: 200px;
+}
+
+.game-show p {
+    margin-top: 1em;
+    font-weight: 600;
+}
+
+.player-1 img {
+    transform: rotate(90deg);
+}
+
+.animate-1 {
+    animation-name: scaleAnimate1;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+}
+
+.player-2 img {
+    transform: scaleX(-1) rotate(90deg);
+}
+
+.animate-2 {
+    animation-name: scaleAnimate2;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes scaleAnimate1 {
+    0% {
+        transform: rotate(90deg) scale(1);
+    }
+    50% {
+        transform: rotate(90deg) scale(0.9);
+    }
+    100% {
+        transform: rotate(90deg) scale(1);
+    }
+}
+
+@keyframes scaleAnimate2 {
+    0% {
+        transform: scaleX(-1) rotate(90deg) scale(1);
+    }
+    50% {
+        transform: scaleX(-1) rotate(90deg) scale(0.9);
+    }
+    100% {
+        transform: scaleX(-1) rotate(90deg) scale(1);
+    }
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 1.5em;
+    letter-spacing: 2px;
+}
+
+.game-options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-options .options {
+    text-align: center;
+}
+
+.game-options span {
+    font-weight: 600;
+    margin-top: 0.8em;
+    display: block;
+    letter-spacing: 1px;
+}
+
+.game-options img {
+    width: 100px;
+    margin: 0 1.2em;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 300ms ease-in-out;
+}
+
+.game-options img:hover {
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
+    transform: rotate(12deg);
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 0;
+}
+
+.copyright p {
+    padding: 0;
+    margin: 0;
+}
+
+.copyright p a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    transition: all 500ms ease-in-out;
+    font-size: 13px;
+}
+
+.copyright p a:hover {
+    color: blanchedalmond;
+}
+
+.modal-content {
+    background-color: rgba(105,105,105, 1)
+}
+
+.modal-header button {
+    border-radius: 10%;
+    border: none;
+    color: rgba(105,105,105, 1);
+}
+
+.modal-header h5 {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.modal-body {
+    font-weight: 300;
+}
+
+.modal-body a {
+    color: aqua;
+    transition: all 200ms ease-in-out;
+    font-weight: 500;
+}
+
+/* Responsive Breakpoint */
+@media only screen and (max-width: 768px) {
+    .game-options .option img {
+        width: 80px;
+    }
+
+    .game-options .option span {
+        font-size: 18px;
+    }
+
+    #message {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+
