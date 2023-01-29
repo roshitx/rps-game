@@ -44,10 +44,17 @@ select {
 
   @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;1,400&display=swap');
 
+body, select, textarea, input, button {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
 
 body {
     background-color: #4a4e69;
-    font-family: 'Poppins', sans-serif;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -94,7 +101,7 @@ img {
     justify-content: space-between;
     align-items: center;
     margin: 1em 0;
-    border: 5px solid #fff;
+    border: 2px solid #fff;
     padding: 1.5em;
 }
 
@@ -152,11 +159,11 @@ img {
 }
 
 h3 {
+    font-weight: bold;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 15px;
     text-transform: uppercase;
     margin-bottom: 1.5em;
-    letter-spacing: 2px;
 }
 
 .game-options {
